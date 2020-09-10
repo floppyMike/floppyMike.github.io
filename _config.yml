@@ -29,7 +29,7 @@ github_username:  floppyMike
 permalink: /:title
 
 # Build settings
-theme: jekyll-theme-midnight
+remote_theme: mattgraham/midnight
 plugins:
   - jekyll-feed
 
