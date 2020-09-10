@@ -38,6 +38,7 @@ The `Boot Medium` also called the `Boot Disk` is the hard drive containing the `
 The `Boot Loader` is a program designed to find and load the `Operating System`. It is located inside the `MBR`
 
 # The Sequence
+---
 1. The power button activates the `power supply`. The `motherboard` followed by the other components are powered on.
 2. The `BIOS` is loaded and executed.
     1. The `POST` program is executed.
