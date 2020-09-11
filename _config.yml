@@ -28,8 +28,10 @@ twitter_username: ---
 github_username:  floppyMike
 permalink: /:title
 
+markdown: kramdown
+
 # Build settings
-theme: minima 
+theme: no-style-please
 plugins:
   - jekyll-feed
   - jekyll-sitemap

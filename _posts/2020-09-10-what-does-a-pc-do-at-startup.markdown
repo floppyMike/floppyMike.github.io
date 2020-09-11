@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "What does a PC do at startup?"
-date:   2020-09-10 11:42:34 +0200
-categories: Random-Facts
+date:   2020-09-10 11:43:34 +0000
+categories: Random-Facts Boot Computer Process
 ---
 
-What a PC gets powered up it goes through a lot of processes before becomes ready for use. This is called the `Boot Process`. The `Boot Process` is controlled by the `BIOS`.
+When a PC gets powered up it goes through a lot of processes before becomes ready for use. This is called the `Boot Process`. The `Boot Process` is controlled by the `BIOS`.
 
 # Terms
----
 ## BIOS
 The `BIOS` (Basic Input/Output System) is saved on the `ROM` component. The `BIOS` is integrated with the `motherboard`.
 In the `BIOS` you can configure the hardware components of the system. For example it's possible to change the order at which the `drivers` are loaded or the clocking speed at which the processors should run at.
@@ -38,7 +37,6 @@ The `Boot Medium` also called the `Boot Disk` is the hard drive containing the `
 The `Boot Loader` is a program designed to find and load the `Operating System`. It is located inside the `MBR`
 
 # The Sequence
----
 1. The power button activates the `power supply`. The `motherboard` followed by the other components are powered on.
 2. The `BIOS` is loaded and executed.
     1. The `POST` program is executed.
