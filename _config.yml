@@ -27,6 +27,7 @@ url: "https://floppymike.github.io/" # the base hostname & protocol for your sit
 twitter_username: ---
 github_username:  floppyMike
 permalink: /:title
+future: true
 
 markdown: kramdown
 
