@@ -5,6 +5,7 @@ date:   2020-09-23 22:04:48 +0200
 categories: Random-Facts math calculation Temperature Resistance
 usemathjax: true
 ---
+## To Inverse
 The Steinhart Equation models the relationship between the temperature and resistance of a thermistor. It's defined like this:
 
 $$\frac{1}{T} = A + B \ln R + C\ln^3R$$
@@ -57,7 +58,7 @@ $$\ln R = \sqrt[3]{y + x} - \sqrt[3]{y - x}$$
 
 $$R = e^{\sqrt[3]{y + x} - \sqrt[3]{y - x}}$$ with $$x = \frac{\frac{1}{T} - A}{2C}$$, $$y = \sqrt{x^2 + \left(\frac{B}{3C}\right)^3}$$
 
----
+## From Inverse
 
 To bring back the equation to its original form we define a simpler version:
 
