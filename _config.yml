@@ -22,26 +22,27 @@ title: Michaels Random Texts
 email: ---
 description: >- # this means to ignore newlines until "baseurl:"
   Contains math, physics and c++ notes not seen at any other website.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://floppymike.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ---
 github_username:  floppyMike
-permalink: /:title
+
+permalink: /:slug.html
+favicon: "logo.png"
 future: true
 
-markdown: kramdown
-
 # Build settings
-remote_theme: riggraz/no-style-please
+theme: no-style-please
+
+theme_config:
+  appearance: "light"
+  back_home_text: ".."
+  date_format: "%Y-%m-%d"
+  show_description: true
+
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
-theme_config:
-  appearance: "light" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description in home page
 
 # Exclude from processing.
 # The following items will not be processed, by default.
