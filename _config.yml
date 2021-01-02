@@ -32,7 +32,7 @@ favicon: "logo.png"
 future: true
 
 # Build settings
-theme: no-style-please
+remote_theme: no-style-please
 
 theme_config:
   appearance: "light"
