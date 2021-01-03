@@ -1,0 +1,3 @@
+social:
+  - {icon: 'github', type: "brand", link: 'https://www.github.com/floppyMike'}
+  - {icon: 'rss', type: "solid", link: "/feed.xml"}
