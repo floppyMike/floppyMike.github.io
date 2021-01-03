@@ -14,7 +14,7 @@ favicon: "logo.png"
 future: true
 
 # Build settings
-theme: jekyll-yamt
+remote_theme: PandaSekh/jekyll-yamt
 
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
