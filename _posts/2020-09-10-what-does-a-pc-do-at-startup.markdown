@@ -2,8 +2,10 @@
 layout: post
 title:  "What does a PC do at startup?"
 date:   2020-09-10 11:43:34 +0000
-categories: Random-Facts Boot Computer Process
+categories: boot computer
 ---
+* What
+{:toc}
 
 When a PC gets powered up it goes through a lot of processes before becomes ready for use. This is called the boot process. The boot process is controlled by the BIOS.
 

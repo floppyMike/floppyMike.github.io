@@ -2,7 +2,7 @@
 layout: post
 title:  "Onion design pattern"
 date:   2021-01-02 10:45:31 +1000
-categories: C++ Design
+categories: c++
 ---
 * What
 {:toc}

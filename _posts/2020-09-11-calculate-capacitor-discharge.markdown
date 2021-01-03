@@ -2,10 +2,9 @@
 layout: post
 title:  "Calculate capacitor discharge voltage"
 date:   2020-09-10 14:19:45 +0000
-categories: Random-Facts capacitor math calculation voltage
+categories: capacitor math
 usemathjax: true
 ---
-disappear
 In a series connection the relationship between the voltage of the capacitor and resistor can be described as follows.
 
 $$U_{cap} + U_R = 0$$

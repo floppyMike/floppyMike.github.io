@@ -2,10 +2,13 @@
 layout: post
 title:  "Derivation Proofs"
 date:   2020-10-02 19:09:05 +0200
-categories: Random-Facts math calculation derivation
+categories: math derivation
 usemathjax: true
 ---
-## Basic
+* What
+{:toc}
+
+# Basic
 The Derivation of a function can be expressed as follows.
 
 $$f'(x) = \lim_{\Delta x\rightarrow x_0}\frac{f(x+\Delta x)-f(x)}{\Delta x}$$
@@ -26,7 +29,7 @@ The first term result in $$\frac{n!}{0!(n-0)!}x^n = x^n$$ and so it gets removed
 
 $$f'(x) = \frac{n!}{1!(n-1)!}x^{n-1} = nx^{n-1}$$
 
-## Exponential
+# Exponential
 The formular for an exponential function is as follows.
 
 $$f'(x) = a^x$$
@@ -39,7 +42,7 @@ Derivation is as follows
 
 $$f'(x) = \frac{d}{dx}a^x=\frac{d}{dx}e^{\ln(a)x}=\ln(a)e^{\ln(a)x}=\ln(a)a^x=\ln(a)a^x$$
 
-## Logarithmic
+# Logarithmic
 The formular for an logarithmic function is as follows.
 
 $$f(x) = \log_a x$$
@@ -58,8 +61,8 @@ Inserting $$a = e$$ results in the following for $$f(x) = \ln x$$
 
 $$f'(x) = \frac{1}{x}$$
 
-## Trigonometric
-### Sine
+# Trigonometric
+## Sine
 Inserting sine into the basic formular results to as follows
 
 $$f(x) = \sin x$$
@@ -74,7 +77,7 @@ Using the [Squeeze theorem](https://en.wikipedia.org/wiki/Squeeze_theorem#Second
 
 $$f'(x) = \cos(x)$$
 
-### Cosine
+## Cosine
 Cosine can be expressed as follows
 
 $$f(x) = \cos x = \sin\left(\frac{\pi}{2} - x\right)$$
@@ -85,7 +88,7 @@ $$f'(x) = \frac{d}{dx}\sin\left(\frac{\pi}{2} - x\right) = \cos\left(\frac{\pi}{
 
 $$f'(x) = \sin x * (-1) = -\sin x$$
 
-### Inverse
+## Inverse
 The inverse of sine is expressed as follows
 
 $$f(x) = \arcsin x$$
