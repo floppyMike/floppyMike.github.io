@@ -231,7 +231,7 @@ int main()
 }
 {% endhighlight cpp %}
 
-If you haven't noticed already a huge problem arises. What about `const`? When the target object is constant then it will try to specialize for it. It could be an intended feature but we don't want to rewrite the entire class just for a `const`. Luckily C++20 adds concepts, which makes this a trivial matter. To keep things simple and easier to understand later we are going to add a second template parameter which indicates the type without `volitile` or `const`.
+If you haven't noticed already a huge problem arises. What about `const`? When the target object is constant then it will try to specialize for it. It could be an intended feature but we don't want to rewrite the entire class just for a `const`. Luckily C++20 adds concepts, which makes this a trivial matter. To keep things simple and easier to understand later we are going to add a second template parameter which indicates the type without `volatile` or `const`.
 
 {% highlight cpp %}
 template<typename T, typename U>
@@ -255,7 +255,7 @@ public:
 template<typename T>
 auto convert(T *o)
 {
-    return Convertable<std::remove_cv_t<T>, T>(o); // Add a non-const or volitile parameter
+    return Convertable<std::remove_cv_t<T>, T>(o); // Add a non-const or volatile parameter
 }
 
 int main()
