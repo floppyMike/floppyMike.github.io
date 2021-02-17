@@ -137,7 +137,7 @@ The execution speed has definitely improved but it still doesn't rival the speed
 {% highlight cpp %}
 struct Vec
 {
-	int k, l;
+    int k, l;
 };
 
 constexpr unsigned n = 10000;
