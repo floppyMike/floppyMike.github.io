@@ -7,7 +7,7 @@ categories: c++
 * W
 {:toc}
 
-After programming for a while you start getting a feel for the design of a programm. You start to know when data should be encapsulated, when a new class is needed, how the classes should interact, etc.... A lot can be leaned from OOP principles taught by nearly every programming teacher. I personally thou had doubts about some concepts in OOP which are prevalent in programming languages like Java or C#. I really dislike the lack of control over memory and the use of heap memory for every object. The deeper I got into programming the more I tried to make my code fast by employing `templates` and maximising the use of compile time constants. While using the `Onion Design` together with `Mixins` I gave myself the illusion of fast and efficient code. Oh how wrong I was...
+After programming for a while you start getting a feel for the design of a program. You start to know when data should be encapsulated, when a new class is needed, how the classes should interact, etc.... A lot can be leaned from OOP principles taught by nearly every programming teacher. I personally thou had doubts about some concepts in OOP which are prevalent in programming languages like Java or C#. I really dislike the lack of control over memory and the use of heap memory for every object. The deeper I got into programming the more I tried to make my code fast by employing `templates` and maximising the use of compile time constants. While using the `Onion Design` together with `Mixins` I gave myself the illusion of fast and efficient code. Oh how wrong I was...
 
 # The Cache
 The cache of a CPU is utilized as a buffer area which gets filled up with data after each read from memory. A hierarchy of levels is present is most CPU designs which are labeled with L1, L2 or L3. The size of these caches are dependant on the model used. For example here are my CPU caches.
@@ -30,10 +30,10 @@ The CPU makes use of the `L1 Data` cache to read batches of memory. For example 
 When in fact the CPU doesn't find the requested value inside the cache, a so called `Cache Miss` happens. A `Cache Miss` describes a failed attempt to read a certain value from the cache, which results in a read operation from main memory. `Cache Miss` is often used when criticising inefficient code.
 
 # In Practice
-Why do we care about this? Isn't this so low level that we have little control over it? Well, not entirely. When you compile a programm the compiler tries to optimize your programm in such a way that it maximises the usage of the cache. Yet the compiler doesn't change to programm. Inefficient algorithms will stay inefficient, just well optimized. By keeping the cache in mind we can improve our programms to perform tasks at lightning speeds!
+Why do we care about this? Isn't this so low level that we have little control over it? Well, not entirely. When you compile a program the compiler tries to optimize your program in such a way that it maximises the usage of the cache. Yet the compiler doesn't change to program. Inefficient algorithms will stay inefficient, just well optimized. By keeping the cache in mind we can improve our programs to perform tasks at lightning speeds!
 
 ## Typical Example
-Lets say we have a matrix and we want to fill it up with each cell having the sum of its row and column. This results in the simple programm as follows.
+Lets say we have a matrix and we want to fill it up with each cell having the sum of its row and column. This results in the simple program as follows.
 {% highlight cpp %}
 constexpr unsigned h = 1000, w = 1000;
 unsigned x[h][w];
@@ -87,7 +87,7 @@ It jumps through the array to access the elements. The cache isn't designed for 
 Our second algorithm actually uses the values loaded into the cache. As such the algorithm becomes ~5x faster.
 
 ## A Different Example
-The problem is mostly present in code that processes arrays. Here is another example which could fit more into your daily programms.
+The problem is mostly present in code that processes arrays. Here is another example which could fit more into your daily programs.
 {% highlight cpp %}
 struct Vec
 {
@@ -172,6 +172,6 @@ jne     .LBB2_3
 These are SIMD operations. I won't explain entirely what SIMD is, since that's out of scope of this post but in short the compiler tries to make the CPU perform multiple additions at once. Which results in a definite speed up.
 
 # Conclusion
-By having the data in mind one can make code significantly faster. When planning a project you should have the organization of data in mind. You could possibly even plan the whole programm having only the storage and tranformations of data in mind. After all the task of a programm is nothing more but reading, transforming and writing data.
+By having the data in mind one can make code significantly faster. When planning a project you should have the organization of data in mind. You could possibly even plan the whole program having only the storage and tranformations of data in mind. After all the task of a program is nothing more but reading, transforming and writing data.
 
 Try to only load data you really need for operations, especially for code which is repeated often. I'm not saying not to use classes at all. Classes are fine as long as everything within the class is used for the operation the class is needed for.
