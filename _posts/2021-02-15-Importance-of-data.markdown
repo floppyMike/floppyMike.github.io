@@ -3,6 +3,7 @@ layout: post
 title:  "Importance of Data"
 date:   2021-02-15 18:00:56 +1000
 categories: c++
+gif: dogs
 ---
 * W
 {:toc}

@@ -32,7 +32,7 @@ $$f'(x) = \frac{n!}{1!(n-1)!}x^{n-1} = nx^{n-1}$$
 # Exponential
 The formular for an exponential function is as follows.
 
-$$f'(x) = a^x$$
+$$f(x) = a^x$$
 
 Rewriting it enables a simple derivation 
 
