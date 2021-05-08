@@ -1,5 +1,0 @@
-pages:
-  - {name: 'Home', url: 'index.html'}
-  - {name: 'About', url: 'about.html'}
-  - {name: 'Categories', url: 'categories'}
-  - {name: 'Archive', url: 'archive.html'}
